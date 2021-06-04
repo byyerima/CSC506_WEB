@@ -102,3 +102,149 @@
 										<!--/profile-->
 										<h3 class="sub-tittle pro">My Profile</h3>
 									       <div class="profile-widget">
+										        <center>    <span class="prfil-img"><img id="output" class="rounded-circle"> </span> </center>
+                                                                                          
+                                                                                    <p><input type="file" accept="image/*" name="image" id="file" onchange="loadFile(event)" style="display: none;"></p>
+
+                                                                                    <br>
+                                                                                 
+
+                                                                                      <p><label for="file" style="cursor: pointer;">Upload Image</label></p> 
+
+
+                                                                                    <script>
+                                                                                        var loadFile = function(event){
+                                                                                            var image = document.getElementById('output');
+                                                                                            image.src = URL.createObjectURL(event.target.files[0]);
+
+                                                                                        };
+
+
+                                                                                    </script>
+                                                                                   
+													</div>
+														<!--/profile-inner-->
+														 <div class="profile-section-inner">
+														       <div class="col-md-6 profile-info">
+																	<h3 class="inner-tittle">Personal Information </h3>
+																	<div class="main-grid3">
+																     <div class="p-20">
+																		
+                                <form class="form-horizontal" action="#" method="post">
+                      
+                                                   <div class="form-group">
+                                                         <label class="col-md-3 col-form-label" for="hf-email">Name</label>
+                                                          <div class="col-sm-8">
+                                                            <input type="text" class="form-control1" id="focusedinput" name="sname" placeholder="Surname"  value="<%= currentUser.getName()%>" >
+                                                          </div>
+
+                                                        </div>
+                          
+                            
+                                                   <div class="form-group">
+                                                         <label class="col-md-3 col-form-label" for="hf-email">Email-Address</label>
+                                                          <div class="col-sm-8">
+                                                            <input type="text" class="form-control1" id="focusedinput" name="sname" placeholder="Surname"  value="<%= currentUser.getUsername()%>" >
+                                                          </div>
+
+                                                        </div>
+                          
+                                                   <div class="form-group">
+                                                         <label class="col-md-3 col-form-label" for="hf-email">Phone</label>
+                                                          <div class="col-sm-8">
+                                                            <input type="text" class="form-control1" id="focusedinput" name="sname" placeholder="Surname"  value="<%= currentUser.getPhone()%>" >
+                                                          </div>
+
+                                                        </div>
+                          
+                          
+                                                      <div class="form-group">
+                                                         <label class="col-md-3 col-form-label" for="hf-email">Address</label>
+                                                          <div class="col-sm-8">
+                                                            <input type="text" class="form-control1" id="focusedinput" name="sname" placeholder="Surname"  value="<%= currentUser.getAddress()%> " >
+                                                          </div>
+
+                                                        </div>
+                          
+                       
+                        <div class="card-footer">
+                      <button class="btn btn-sm btn-primary" type="submit" name="submit">
+                      <i class="fa fa-dot-circle-o"></i> Update</button>
+                    
+                  </div>
+                        
+                    </form>
+																	</div>
+																 </div>
+																
+																			</div>
+																			<!--//set-3-->
+
+
+
+														<!--//forms-->
+												</div>
+											<!--//outer-wp-->
+								
+								</div>
+							</div>
+				<!--//content-inner-->
+			<!--/sidebar-menu-->
+				<div class="sidebar-menu">
+					<header class="logo">
+					 <span id="logo"> <h1>CSC506APP</h1></span>
+				
+					</header>
+				<div style="border-top:1px solid rgba(69, 74, 84, 0.7)"></div>
+			<!--/down-->
+							<div class="down">
+
+									  <a href="#"><span class=" name-caret"><%= currentUser.getName()%> </span></a>
+									 <p>System Administrator</p>
+									
+									</div>
+							   <!--//down-->
+                                  <div class="menu">
+									<ul id="menu" >
+                   <li><a href="#"><i class=""></i> <span></span></a></li>
+                      <li><a href="#"><i class=""></i> <span></span></a></li>
+                        <li><a href="login.jsp"><i class="fa fa-power-off"></i> <span>Logout</span></a></li>
+                 
+
+
+
+
+								  </ul>
+								</div>
+							  </div>
+							  <div class="clearfix"></div>
+							</div>
+							<script>
+							var toggle = true;
+
+							$(".sidebar-icon").click(function() {
+							  if (toggle)
+							  {
+								$(".page-container").addClass("sidebar-collapsed").removeClass("sidebar-collapsed-back");
+								$("#menu span").css({"position":"absolute"});
+							  }
+							  else
+							  {
+								$(".page-container").removeClass("sidebar-collapsed").addClass("sidebar-collapsed-back");
+								setTimeout(function() {
+								  $("#menu span").css({"position":"relative"});
+								}, 400);
+							  }
+
+											toggle = !toggle;
+										});
+							</script>
+<!--js -->
+<script src="js/jquery.nicescroll.js"></script>
+<script src="js/scripts.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+   <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
+
