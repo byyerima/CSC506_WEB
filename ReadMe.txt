@@ -6,3 +6,4 @@ The software which we run the application are as follows:
 
 2. MySQL-Java-Database-Connector is needed for the application to be connected to the database.
 
+
