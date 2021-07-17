@@ -43,3 +43,50 @@
 			<div class="header-section">
 						<!--menu-right-->
 						<div class="top_menu">
+							<!--/profile_details-->
+								<div class="profile_details_left">
+								
+											
+									       
+
+						<li class="dropdown note">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-tasks"></i> <span class="badge blue1">2</span></a>
+										<ul class="dropdown-menu two">
+										<li>
+											<div class="notification_header">
+												<h3>Dashboard Status</h3>
+											</div>
+										</li>
+									
+										<li><a href="#">
+											<div class="task-info">
+												<span class="task-desc">Dashboard done</span><span class="percentage">90%</span>
+											   <div class="clearfix"></div>
+											</div>
+
+											<div class="progress progress-striped active">
+												 <div class="bar green" style="width:90%;"></div>
+											</div>
+										</a></li>
+										
+										<li><a href="#">
+											<div class="task-info">
+												<span class="task-desc">Issues fixed</span><span class="percentage">80%</span>
+											   <div class="clearfix"></div>
+											</div>
+											<div class="progress progress-striped active">
+												 <div class="bar  blue" style="width: 80%;"></div>
+											</div>
+										</a></li>
+										
+									</ul>
+							</li>
+							<div class="clearfix"></div>
+								</ul>
+							</div>
+							<div class="clearfix"></div>
+							<!--//profile_details-->
+						</div>
+						<!--//menu-right-->
+					<div class="clearfix"></div>
+				</div>
