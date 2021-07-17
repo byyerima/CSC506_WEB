@@ -175,3 +175,78 @@
                   </div>
                         
                     </form>   
+		</div>
+																 </div>
+																
+																			</div>
+																			<!--//set-3-->
+
+
+
+														<!--//forms-->
+												</div>
+											<!--//outer-wp-->
+								
+								</div>
+							</div>
+				<!--//content-inner-->
+			<!--/sidebar-menu-->
+				<div class="sidebar-menu">
+					<header class="logo">
+					 <span id="logo"> <h1>CSC506APP</h1></span>
+				
+					</header>
+				<div style="border-top:1px solid rgba(69, 74, 84, 0.7)"></div>
+			<!--/down-->
+							<div class="down">
+
+									  <a href="#"><span class=" name-caret"><%= currentUser.getName()%> </span></a>
+									 <p>System Administrator</p>
+									
+									</div>
+							   <!--//down-->
+                                  <div class="menu">
+									<ul id="menu" >
+                      <li><a href="profile.jsp"><i class="fa fa-user"></i> <span>Profile</span></a></li>
+                   <li><a href="comment.jsp"><i class="fa fa-bookmark"></i> <span>Post/Comment</span></a></li>
+                      <li><a href="#"><i class=""></i> <span></span></a></li>
+                        <li><a href="index.jsp"><i class="fa fa-power-off"></i> <span>Logout</span></a></li>
+                 
+
+
+
+
+								  </ul>
+								</div>
+							  </div>
+							  <div class="clearfix"></div>
+							</div>
+							<script>
+							var toggle = true;
+
+							$(".sidebar-icon").click(function() {
+							  if (toggle)
+							  {
+								$(".page-container").addClass("sidebar-collapsed").removeClass("sidebar-collapsed-back");
+								$("#menu span").css({"position":"absolute"});
+							  }
+							  else
+							  {
+								$(".page-container").removeClass("sidebar-collapsed").addClass("sidebar-collapsed-back");
+								setTimeout(function() {
+								  $("#menu span").css({"position":"relative"});
+								}, 400);
+							  }
+
+											toggle = !toggle;
+										});
+							</script>
+<!--js -->
+<script src="js/jquery.nicescroll.js"></script>
+<script src="js/scripts.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+   <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
+
