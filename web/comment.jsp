@@ -90,3 +90,65 @@
 						<!--//menu-right-->
 					<div class="clearfix"></div>
 				</div>
+		<!-- //header-ends -->
+
+                                               <!--outter-wp-->
+							<div class="outter-wp">
+									
+										<!--/profile-->
+										<h3 class="sub-tittle pro">Post/Comment</h3>
+									       <div class="profile-widget">
+                                                                                   
+                                                                                      
+                                                                                   
+                                                                                   
+													</div>
+														<!--/profile-inner-->
+														 <div class="profile-section-inner">
+														       <div class="col-md-6 profile-info">
+																	<h3 class="inner-tittle">Make a Post </h3>
+																	<div class="main-grid3">
+					
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            <div class="p-20">
+				  
+                       <%
+        if(request.getParameter("submit") !=null){
+            
+         
+            String post = request.getParameter("post");
+             String name = request.getParameter("name");
+         
+          
+            
+            Connection con;
+            PreparedStatement pst;
+            ResultSet rs;
+            
+            Class.forName("com.mysql.jdbc.Driver");
+            con = DriverManager.getConnection("jdbc:mysql://localhost/workdatabase","root","");
+            pst = con.prepareStatement("INSERT INTO `workdatabase`.`comment` (`post`, `name`) VALUES (?, ?);");
+            
+            pst.setString(1, post);
+            pst.setString(2, name);
+        
+            
+            
+            
+            pst.executeUpdate();
+            
+            %>
+           <script>
+               alert("Posted");
+           </script>
+        
+            <%
+        }
+    
+    
+    %>
