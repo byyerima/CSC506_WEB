@@ -152,3 +152,26 @@
     
     
     %>
+		<form class="form-horizontal" action="#" method="post">
+                      
+                                                   <div class="form-group">
+                                                         <label class="col-md-3 col-form-label" for="hf-email">Name</label>
+                                                          <div class="col-sm-8">
+                                                            <input type="text" class="form-control1" id="focusedinput" name="name"  >
+                                                          </div>
+
+                                                        </div>
+                          
+                            
+                                                   <div class="col-md-9">
+                                                          <textarea name="post" placeholder="Write Comment..." >  </textarea>
+                                                          </div>
+                          
+                       
+                        <div class="card-footer">
+                      <button class="btn btn-sm btn-primary" type="submit" name="submit">
+                      <i class="fa fa-dot-circle-o"></i> Post</button>
+                    
+                  </div>
+                        
+                    </form>   
